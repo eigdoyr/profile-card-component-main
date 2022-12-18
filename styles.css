@@ -18,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--dark-cyan);
+}
+
+main {
   display: grid;
   place-content: center;
   min-height: 100vh;
@@ -33,6 +36,19 @@ ul,
 li {
   list-style: none;
   padding: 0;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg-top {
+  position: absolute;
+
+  /* left: -120px; */
+}
+.bg-bottom {
+  position: absolute;
 }
 
 .card-container {
