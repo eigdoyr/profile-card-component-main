@@ -18,9 +18,10 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--dark-cyan);
-}
-
-main {
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top -32rem left -45rem, bottom -40rem right -43rem;
+  background-repeat: no-repeat;
   display: grid;
   place-content: center;
   min-height: 100vh;
@@ -38,25 +39,16 @@ li {
   padding: 0;
 }
 
-.bg {
-  position: relative;
-}
-
-.bg-top {
-  position: absolute;
-
-  /* left: -120px; */
-}
-.bg-bottom {
-  position: absolute;
-}
-
 .card-container {
   text-align: center;
-  padding: 1.75rem;
-  border-radius: 15px;
   max-width: 375px;
   margin: 0 auto;
+}
+
+.card {
+  box-shadow: 3px 3px 15px hsla(0, 0%, 0%, 0.218);
+  margin: 1.75rem;
+  border-radius: 15px;
 }
 
 .user-info {
@@ -66,11 +58,11 @@ li {
 }
 
 .user-image {
-  position: absolute;
+  position: relative;
 }
 
 .img-avatar {
-  position: relative;
+  position: absolute;
   top: -50px;
   left: 110px;
   right: 0;
@@ -84,6 +76,7 @@ li {
 
 .user-name {
   font-size: 1.2rem;
+  color: var(--desaturated-blue);
 }
 
 .user-age {
@@ -116,4 +109,10 @@ li {
   font-size: 0.65rem;
   color: var(--dark-gray);
   letter-spacing: 1px;
+}
+
+@media (width>=1024px) {
+  body {
+    background-position: top -29rem left -16rem, bottom -35rem right -13rem;
+  }
 }
