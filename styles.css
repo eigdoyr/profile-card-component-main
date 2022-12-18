@@ -1,0 +1,103 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.card-container {
+  text-align: center;
+  padding: 1.75rem;
+  border-radius: 15px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.user-info {
+  background-color: var(--white);
+  padding: 4.5rem 0 1rem 0;
+  border-bottom: 1px solid hsla(0, 0%, 71%, 0.267);
+}
+
+.user-image {
+  position: absolute;
+}
+
+.img-avatar {
+  position: relative;
+  top: -50px;
+  left: 110px;
+  right: 0;
+  border-radius: 100px;
+  border: 5px solid var(--white);
+}
+
+.img-banner {
+  border-radius: 1em 1em 0 0;
+}
+
+.user-name {
+  font-size: 1.2rem;
+}
+
+.user-age {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.user-location {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1.15rem;
+  border-radius: 0 0 1em 1em;
+}
+
+.stats-count {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.stats-label {
+  font-size: 0.65rem;
+  color: var(--dark-gray);
+  letter-spacing: 1px;
+}
