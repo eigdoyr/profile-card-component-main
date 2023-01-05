@@ -1,9 +1,14 @@
 :root {
-  --dark-cyan: hsl(185, 75%, 39%);
+  /* --yelly: hsl(185, 75%, 39%);
   --desaturated-blue: hsl(229, 23%, 23%);
   --grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%); */
+  --yelly: hsl(51, 100%, 80%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(60, 100%, 94%);
 }
 
 *,
@@ -17,7 +22,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Kumbh Sans", sans-serif;
-  background-color: var(--dark-cyan);
+  background-color: var(--yelly);
   background-image: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
   background-position: top -32rem left -45rem, bottom -40rem right -43rem;
